@@ -10,33 +10,18 @@ Nivel 1
 Ejercicio aplicación Web CRUD con MySQL
 Accede a la página  -> https://start.spring.io/ , y genera un proyecto Spring boot con las siguientes características:
 
-PROYECT  (gestor de dependencias)
-Maven o Gradle
- LANGUAGE
-Java
- SPRING BOOT
-La última versión estable
+PROYECT  (gestor de dependencias): Maven o Gradle
+LANGUAGE: Java
+SPRING BOOT: La última versión estable
 PROYECTO METADATA
-Group
-cat.itacademy.barcelonactiva.apellidos.nombre.s05.t01.n01
-Artifact
-S05T01N01ApellidosNombre
-Name
-S05T01N01ApellidosNombre
-Description
-S05T01N01ApellidosNombre
-Package name
-cat.itacademy.barcelonactiva.apellidos.nombre.s05.t01.n01
- PACKAGIN
-Jar
- JAVA
-Mínimo versión 11 
-Dependencias:
-Spring Boot DevTools
-Spring Web
-Spring Data JPA
-MySQL Driver
-Thymeleaf
+Group: cat.itacademy.barcelonactiva.apellidos.nombre.s05.t01.n01
+Artifact: S05T01N01ApellidosNombre
+Name: S05T01N01ApellidosNombre
+Description: S05T01N01ApellidosNombre
+Package name: cat.itacademy.barcelonactiva.apellidos.nombre.s05.t01.n01
+PACKAGIN: Jar
+JAVA: Mínimo versión 11 
+Dependencias: Spring Boot DevTools, Spring Web, Spring Data JPA, MySQL Driver, Thymeleaf
 
 Tenemos una entidad llamada  Sucursal , que dispone de las siguientes propiedades:
 -           Integer pk_SucursalID
@@ -65,78 +50,28 @@ http://localhost:9000/sucursal/getOne/{id}
 
 http://localhost:9000/sucursal/getAll
 
- 
-
 Como puedes ver, en el archivo application.properties, deberás configurar que el puerto a utilizar sea el 9000.
 
 La vista deberá estar desarrollada con  Thymeleaf .
 
 Para hacerla más atractiva, puedes usar opcionalmente alguna librería CSS que te facilite, como bootstrap, tailwind, material, etc.
 
-Muy Importante
-
-Además del enlace a Git de la tarea resuelta,  deberás incluir al menos dos enlaces , distintos de los recursos que te hemos proporcionado en el campus, que te hayan servido o hubiesen podido hacerlo, para resolver la totalidad de la tarea o algunas partes.
-
 Nivel 2
-
 
 Ejercicio API Rest CRUD con MySQL
 Accede a la página  -> https://start.spring.io/ , y genera un proyecto Spring boot con las siguientes características:
 
-PROYECT  (gestor de dependencias)
-
-Maven o Gradle
-
- LANGUAGE
-
-Java
-
- SPRING BOOT
-
-La última versión estable
-
- 
-
-PROYECTO METADATA
-
-Group
-
-cat.itacademy.barcelonactiva.apellidos.nombre.s05.t01.n02
-
-Artifact
-
-S05T01N02ApellidosNombre
-
-Name
-
-S05T01N02ApellidosNombre
-
-Description
-
-S05T01N02ApellidosNombre
-
-Package name
-
-cat.itacademy.barcelonactiva.apellidos.nombre.s05.t01.n02
-
- PACKAGIN
-
-Jar
-
- JAVA
-
-Mínimo versión 11 
-
-Dependencias:
-
-Spring Boot DevTools
-
-Spring Web
-
-Spring Data JPA
-
-MySQL Driver
-
+PROYECT  (gestor de dependencias): Maven o Gradle
+LANGUAGE Java
+SPRING BOOT: La última versión estable
+Group: cat.itacademy.barcelonactiva.apellidos.nombre.s05.t01.n02
+Artifact: S05T01N02ApellidosNombre
+Name : S05T01N02ApellidosNombre
+Description: S05T01N02ApellidosNombre
+Package name: cat.itacademy.barcelonactiva.apellidos.nombre.s05.t01.n02
+PACKAGIN: Jar
+JAVA Mínimo versión 11 
+Dependencias: Spring Boot DevTools, Spring Web, Spring Data JPA, MySQL Driver
 
 Tenemos una entidad llamada  FlorEntity , que dispone de las siguientes propiedades:
 
@@ -182,8 +117,6 @@ http://localhost:9001/flor/getOne/{id}
 
 http://localhost:9001/flor/getAll
 
- 
-
 Como puedes ver, en el archivo application.properties, deberás configurar que el puerto a utilizar sea el 9001.
 
 Importante
@@ -192,69 +125,23 @@ Tendrás que tener en cuenta las buenas prácticas de diseño de las API, utiliz
 
 Tienes que incluir  swagger  para que cualquier desarrollador/a pueda tener una idea rápida de los recursos de que dispone la API.
 
-Muy Importante
-
-Además del enlace a Git de la tarea resuelta,  deberás incluir al menos dos enlaces , distintos de los recursos que te hemos proporcionado en el campus, que te hayan servido o hubiesen podido hacerlo, para resolver la totalidad de la tarea o algunas partes.
-
-
-
-
-
 Nivel 3
-
 
 Ejercicio API Rest conectada a otra API Rest
 Accede a la página  -> https://start.spring.io/ , y genera un proyecto Spring boot con las siguientes características:
 
-
-PROYECT  (gestor de dependencias)
-
-Maven o Gradle
-
- LANGUAGE
-
-Java
-
- SPRING BOOT
-
-La última versión estable
-
- PROYECTO METADATA
-
-Group
-
-cat.itacademy.barcelonactiva.apellidos.nombre.s05.t01.n03
-
-Artifact
-
-S05T01N03ApellidosNombre
-
-Name
-
-S05T01N03ApellidosNombre
-
-Description
-
-S05T01N03ApellidosNombre
-
-Package name
-
-cat.itacademy.barcelonactiva.apellidos.nombre.s05.t01.n03
-
- PACKAGIN
-
-Jar
-
- JAVA
-
-Mínimo versión 11 
-
-Dependencias:
-
-Spring Boot DevTools
-
-Spring Web
-
+PROYECT  (gestor de dependencias): Maven o Gradle
+LANGUAGE: Java
+SPRING BOOT: La última versión estable
+PROYECTO METADATA
+Group: cat.itacademy.barcelonactiva.apellidos.nombre.s05.t01.n03
+Artifact: S05T01N03ApellidosNombre
+Name: S05T01N03ApellidosNombre
+Description: S05T01N03ApellidosNombre
+Package name: cat.itacademy.barcelonactiva.apellidos.nombre.s05.t01.n03
+PACKAGING: Jar
+JAVA:minimo versión 11 
+Dependencias: Spring Boot DevTools, Spring Web
 
 Usando  RestTemplate  o  WebClient , deberás conectarte a la API que has realizado en el nivel 2, para llamar y testar todas las peticiones que permite esta API.
 
@@ -286,8 +173,6 @@ http://localhost:9002/flor/clientFlorsGetOne/{id}
 
 http://localhost:9002/flor/clientFlorsAll
 
- 
-
 Como puedes ver, en el archivo application.properties, deberás configurar que el puerto a utilizar sea el 9002.
 
 Para probar el nivel 3, deberás tener en marcha la API del nivel 2. No tendrás problemas, puesto que la API del nivel 3 trabaja con el puerto 9002 y la del nivel 2 con el puerto 9001.
@@ -295,7 +180,3 @@ Para probar el nivel 3, deberás tener en marcha la API del nivel 2. No tendrás
 Importante
 
 Tienes que incluir  swagger  para que cualquier desarrollador/a pueda tener una idea rápida de los recursos de que dispone la API.
-
-Muy Importante
-
-Además del enlace a Git de la tarea resuelta,  deberás incluir al menos dos enlaces , distintos de los recursos que te hemos proporcionado en el campus, que te hayan servido o hubiesen podido hacerlo, para resolver la totalidad de la tarea o algunas partes.
