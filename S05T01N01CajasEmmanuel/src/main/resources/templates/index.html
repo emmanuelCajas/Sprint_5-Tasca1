@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Control Sucursales</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/nuevo">Agregar Sucursal</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container text-center">
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Pais</th>
+                <th scope="col">tipo</th>
+                <th scope="col">Acciones</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="sucursal : ${listaSucursal}">
+                <td th:text="${sucursal.pk_sucursalId}" ></td>
+                <td th:text="${sucursal.nombreSucursal}" ></td>
+                <td th:text="${sucursal.paisSucursal}" ></td>
+                <td th:text="${sucursal.tipoSucursal}" ></td>
+
+                <td>
+                    <a class="btn btn-primary" th:href="@{'/editar/' + ${sucursal.pk_sucursalId}}">Editar</a>
+                    &nbsp;
+                    <a class="btn btn-primary" th:href="@{'/obtener/' + ${sucursal.pk_sucursalId}}">Obtener</a>
+                    &nbsp;&nbsp;
+                    <a class="btn btn-danger" th:href="@{'/eliminar/' + ${sucursal.pk_sucursalId}}">Eliminar</a>
+
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
